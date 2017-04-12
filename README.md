@@ -6,7 +6,7 @@ GifCreator is a PHP class to create animated GIF from multiple images
 
 ### For what ?
 
-This class helps you to create an animated GIF image: give multiple images and their duration and that's it !
+This class helps you to create an animated GIF image: give multiple images and their duration and that's it!
 
 ### Usage
 
@@ -27,7 +27,7 @@ $frames = array(
 $durations = array(40, 80, 40, 20);
 
 // Initialize and create the GIF !
-$gc = new GifCreator();
+$gc = new \Ooypunk\GifCreator();
 $gc->create($frames, $durations, 5);
 ```
 The 3rd parameter of create() method allows you to choose the number of loop of your animated gif before it stops.
@@ -60,7 +60,7 @@ file_put_contents('/myfolder/animated_picture.gif', $gifBinary);
 
 - The transparency is based on the first given frame. It will be saved only if you give multiple frames with same transparent background.
 - The dimensions of the generated GIF are based on the first frame. If you need to resize your frames to get the same dimension, you can use 
-this class: https://github.com/Sybio/ImageWorkshop
+this class: https://github.com/Ooypunk/ImageWorkshop
 
 ### About
 
